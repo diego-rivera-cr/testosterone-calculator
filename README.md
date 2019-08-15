@@ -3,7 +3,7 @@ Small free and bioavailable testosterone calculator, based on the formula that u
 
 The small app is based on ISSAM free testosterone calculator; the calculator GUI was developed using a ttk interface thru **pygubu**.
 
-##References:
+## References:
 
   •Fiers, T., & Kaufman, J. (2019). Free & Bioavailable Testosterone calculator. Retrieved 15 August 2019, from http://www.issam.ch/freetesto.htm
   
