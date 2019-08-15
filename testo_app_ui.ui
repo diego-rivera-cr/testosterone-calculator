@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Labelframe" id="Testosterona">
+    <property name="height">200</property>
+    <property name="text" translatable="yes">Calculadora de
+Testosterona Libre</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="testo_label">
+        <property name="compound">right</property>
+        <property name="text" translatable="yes">Testosterona</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="testo_entry">
+        <property name="exportselection">false</property>
+        <property name="font">TkTextFont</property>
+        <property name="justify">left</property>
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Testosterona</property>
+        <property name="textvariable">double:testosterone</property>
+        <property name="validate">none</property>
+        <property name="width">15</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="testo_units">
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="textvariable">string:testosterone_units</property>
+        <property name="values">ng/dL ng/mL nmol/dL nmol/mL nmol/L</property>
+        <property name="width">10</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="shbg_label">
+        <property name="compound">right</property>
+        <property name="text" translatable="yes">SHBG</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="shbg_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">SHBG</property>
+        <property name="textvariable">double:shbg</property>
+        <property name="validate">none</property>
+        <property name="width">15</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="shbg_units">
+        <property name="textvariable">string:shbg_units</property>
+        <property name="values">nmol/L</property>
+        <property name="width">10</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="albumin_label">
+        <property name="compound">top</property>
+        <property name="text" translatable="yes">Albúmina</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="albumin_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Albúmina</property>
+        <property name="textvariable">double:albumin</property>
+        <property name="validate">none</property>
+        <property name="width">15</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="albumin_units">
+        <property name="textvariable">string:albumin_units</property>
+        <property name="values">g/dL g/L</property>
+        <property name="width">10</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="calculate_button">
+        <property name="command">calculate</property>
+        <property name="compound">right</property>
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">¡Calcular!</property>
+        <property name="underline">0</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="fai_label">
+        <property name="text" translatable="yes">FAI</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="fai">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">readonly</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">FAI</property>
+        <property name="textvariable">double:fai</property>
+        <property name="validate">none</property>
+        <property name="width">12</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="ft_label">
+        <property name="compound">top</property>
+        <property name="text" translatable="yes">Testosterona libre</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="ft_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">readonly</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">FT</property>
+        <property name="textvariable">int:ft</property>
+        <property name="width">12</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="ftp_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">readonly</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">0.00</property>
+        <property name="textvariable">string:ftp</property>
+        <property name="validate">none</property>
+        <property name="width">6</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="ft_units">
+        <property name="justify">left</property>
+        <property name="text" translatable="yes">uds</property>
+        <property name="textvariable">string:ftu</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="bt_label">
+        <property name="compound">top</property>
+        <property name="text" translatable="yes">Biodisponible</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="bt_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">readonly</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">BT</property>
+        <property name="textvariable">double:bt</property>
+        <property name="validate">none</property>
+        <property name="width">12</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="btp_entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">left</property>
+        <property name="state">readonly</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">0.00</property>
+        <property name="textvariable">string:btp</property>
+        <property name="validate">none</property>
+        <property name="width">6</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="bt_units">
+        <property name="text" translatable="yes">uds</property>
+        <property name="textvariable">string:btu</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Sizegrip" id="Sizegrip_1">
+        <property name="cursor">bottom_right_corner</property>
+        <layout>
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">7</property>
+          <property name="sticky">se</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
