@@ -71,18 +71,20 @@ class FreeTestosteroneCalculator:
         #bioavailable calculated testosterone
         self.bioavailable_testosterone = self.free_calculated_testosterone * self.f_a1bumin
         #correct free and bioavailable testosterone according to testosterone units
-        if (self.testosterone_units=="ng/mL"):
-            self.free_calculated_testosterone = self.free_calculated_testosterone/100
-            self.bioavailable_testosterone=self.bioavailable_testosterone/100
-        if (self.testosterone_units=="nmol/dL"):
-            self.free_calculated_testosterone = self.free_calculated_testosterone * 0.00347
-            self.bioavailable_testosterone = self.bioavailable_testosterone * 0.00347
-        if (self.testosterone_units=="nmol/L"):
-            self.free_calculated_testosterone = self.free_calculated_testosterone * 0.0347
-            self.bioavailable_testosterone = self.bioavailable_testosterone * 0.0347
-        if (self.testosterone_units=="nmol/mL"):
-            self.free_calculated_testosterone = self.free_calculated_testosterone * 0.0000347
-            self.bioavailable_testosterone = self.bioavailable_testosterone * 0.0000347
+        #THIS IS NOT NEEDED IN THE CURRENT APP; DEFAULT UNITS ARE pg/mL FOR FREE TESTOSTERONE, 
+        #AND ng/dL FOR BIOAVAILABLE TESTOSTERONE
+        #if (self.testosterone_units=="ng/mL"):
+            #self.free_calculated_testosterone = self.free_calculated_testosterone/100
+            #self.bioavailable_testosterone=self.bioavailable_testosterone/100
+        #if (self.testosterone_units=="nmol/dL"):
+            #self.free_calculated_testosterone = self.free_calculated_testosterone * 0.00347
+            #self.bioavailable_testosterone = self.bioavailable_testosterone * 0.00347
+        #if (self.testosterone_units=="nmol/L"):
+            #self.free_calculated_testosterone = self.free_calculated_testosterone * 0.0347
+            #self.bioavailable_testosterone = self.bioavailable_testosterone * 0.0347
+        #if (self.testosterone_units=="nmol/mL"):
+            #self.free_calculated_testosterone = self.free_calculated_testosterone * 0.0000347
+            #self.bioavailable_testosterone = self.bioavailable_testosterone * 0.0000347
     
     
     def get_free_testosterone_ng_per_dL(self):
