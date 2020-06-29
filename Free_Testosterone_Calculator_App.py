@@ -1,3 +1,5 @@
+import platform
+
 try:
     import tkinter as tk  # for python 3
 except:
@@ -90,7 +92,8 @@ def main():
     root = tk.Tk()
     app = TestosteroneCalculatorApp(root)
     root.title("Testosterona libre")
-    root.iconbitmap("calculator.ico")
+    if platform.system() == "Windows":
+        root.iconbitmap("calculator.ico")
     root.fg = "black"
     root.mainloop()
     return 0
